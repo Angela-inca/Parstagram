@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Parse.initialize(
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://damp-escarpment-23017.herokuapp.com/parse"
             })
         )
+        
         return true
     }
 
